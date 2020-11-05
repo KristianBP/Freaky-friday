@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    line-height: 150%;
+}
+
+ul {
+    overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: royalblue;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 42px 42px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+li a:hover {
+    background-color: darkgrey;
+    color: black;
+}
+
+.active {
+    background-color: #00134d;
+}
+
+@media screen and (max-width: 790px) {
+    li {
+        float: none;
+    }
+
+}
+
+.homeboks {
+    border: 2px solid black;
+    display: table;
+    content: "";
+    clear: both;
+    width: 90%;
+    margin: 4% 5% 5% 5%;
+}
+
+.homeheader {
+    padding-left: 20px;
+}
+
+.hometekst {
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.contactheader {
+    margin: 5vh;
+    padding-top: 15px;
+}
+
+.contacttekst {
+    margin-left: 5vh;
+    padding: 20px;
+    border-left: 2px solid black;
+    font-size: 20px;
+    line-height: 180%;
+}
