@@ -42,6 +42,21 @@ li a:hover {
 @media screen and (max-width: 790px) {
     li {
         float: none;
+        border-bottom: 1px solid white;
+    }
+    .homepris {
+        padding-left: 25%;
+    }
+    .homeboks {
+        margin: 4% 5% 20% 5%;
+    }
+    .homeheader {
+        line-height: 200%;
+    }
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
     }
 
 }
@@ -49,24 +64,38 @@ li a:hover {
 .homeboks {
     border: 2px solid black;
     display: table;
-    content: "";
-    clear: both;
     width: 90%;
     margin: 4% 5% 5% 5%;
 }
 
 .homeheader {
     padding-left: 20px;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 35px;
 }
 
 .hometekst {
     padding-left: 40px;
-    padding-top: 20px;
+    padding-top: 40px;
+    font-size: 20px;
+    line-height: 170%;
+}
+
+.homepris {
+    font-size: 20px;
+    line-height: 170%;
+    float: right;
+    padding-right: 30vh;
+    border-left: 2px solid black;
+    padding-left: 20px;
 }
 
 .contactheader {
     margin: 5vh;
     padding-top: 15px;
+    font-size: 35px;
+    padding-bottom: 40px;
 }
 
 .contacttekst {
@@ -75,4 +104,83 @@ li a:hover {
     border-left: 2px solid black;
     font-size: 20px;
     line-height: 180%;
+    margin-bottom: 90px;
+}
+
+.speciesboks {
+    border: 2px solid black;
+    display: table;
+    content: "";
+    clear: both;
+    width: 90%;
+    margin: 4% 5% 5% 5%;
+    padding: 40px;
+}
+
+.speciesheader {
+    padding-bottom: 40px;
+    font-size: 35px;
+    text-align: center;
+}
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: royalblue;
+    color: white;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+.row {margin: 0 -5px;}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.card:hover {
+    border: 1px solid #535353;
+}
+
+@media screen and (max-width: 1310px) {
+    .column {
+        width: 50%;
+    }
+    .card {
+        margin: 70px;
+
+    }
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 790px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
 }
