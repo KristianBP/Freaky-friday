@@ -162,7 +162,6 @@ body {
 .column {
     float: left;
     width: 25%;
-    padding: 0 10px;
 }
 
 .row {margin: 0 -5px;}
@@ -181,10 +180,6 @@ body {
     position: relative;
 }
 
-.card:hover {
-    border: 1px solid #535353;
-}
-
 @media screen and (max-width: 1310px) {
     .column {
         width: 50%;
@@ -195,13 +190,14 @@ body {
 
     }
 
-    @media screen and (max-width: 790px) {
+    @media screen and (max-width: 750px) {
         .column {
-            width: 100%;
+            width: 110%;
             display: block;
             margin-bottom: 20px;
             margin-top: -11vh;
             padding-top: 20px;
+            margin-left: -20px;
         }
     }
 }
