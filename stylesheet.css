@@ -45,10 +45,10 @@ li a:hover {
         border-bottom: 1px solid white;
     }
     .homepris {
-        padding-left: 25%;
+        padding-bottom: 30px;
     }
     .homeheader {
-        line-height: 200%;
+        line-height: 150%;
     }
     .column {
         width: 100%;
@@ -56,7 +56,11 @@ li a:hover {
         margin-bottom: 20px;
     }
     .speciesheader {
-        line-height: 200%;
+        line-height: 150%;
+    }
+    .homepris {
+        margin-right: -30%;
+        width: 120%;
     }
 }
 
@@ -122,6 +126,11 @@ li a:hover {
     text-align: center;
 }
 
+.bildetekst {
+    font-size: 17px;
+    line-height: 170%;
+}
+
 .pingvintittel {
     font-size: 25px;
 }
@@ -182,16 +191,17 @@ body {
     }
 
     .card {
-        margin: 70px;
+        margin: 30px;
 
     }
 
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 790px) {
         .column {
             width: 100%;
             display: block;
             margin-bottom: 20px;
             margin-top: -11vh;
+            padding-top: 20px;
         }
     }
 }
